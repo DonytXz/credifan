@@ -1,40 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import Menu from "./Menu";
+import MobileMenu from "./MobileMenu";
 
 const Navigation = (props) => {
   const { isLanding } = props;
-  
+  const [menuFlag, setMenuFlag] = useState(false);
+
   return (
     <>
-      <nav className="">
-        <ul>
-          <li>
-            <Link to="/" className="uppercase">
-              Home
-            </Link>
-          </li>
-          {isLanding && (
-            <>
-              <li>
-                <Link to={{pathname: '/', hash: '#about'}} className="uppercase">
-                  quienes somos
-                </Link>
-              </li>
-              <li>
-                <Link to={{pathname: '/', hash: '#contact'}}className="uppercase">
-                  contacto
-                </Link>
-              </li>
-            </>
-          )}
-
-          <li>
-            <Link to="/login" className="uppercase">
-              Ingresa
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <div className="p-6">
+        <Menu isLanding={isLanding} />
+        <MobileMenu
+          isLanding={isLanding}
+          setMenuFlag={setMenuFlag}
+          menuFlag={menuFlag}
+        />
+      </div>
     </>
   );
 };
