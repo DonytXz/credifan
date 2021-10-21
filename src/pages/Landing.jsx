@@ -8,20 +8,21 @@ const Landing = () => {
     const hash = location.hash;
     // Check if there is a hash and if an element with that id exists
     const el = hash && document.getElementById(hash.substr(1));
-    console.log(el, hash);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
     }
   }, [location.hash]);
   return (
     <>
-      <Home />
-      <div id="about">
-        <p></p>
-      </div>
+      <div className="bg-gray-100">
+        <Home />
+        <div id="about">
+          <p></p>
+        </div>
 
-      <div id="contact">
-        <p></p>
+        <div id="contact">
+          <p></p>
+        </div>
       </div>
     </>
   );

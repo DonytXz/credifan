@@ -1,11 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HamburgerMenu from "../../assets/img/icons/hamburgerMenu.svg";
 
 const Menu = (props) => {
-  const { isLanding } = props;
+  const { isLanding, menuFlag, setMenuFlag } = props;
 
   return (
     <>
+      <img
+        className="block lg:hidden p-6"
+        src={HamburgerMenu}
+        alt=""
+        srcSet=""
+        onClick={() => setMenuFlag(!menuFlag)}
+      />
       <nav className="hidden lg:block">
         <ul className="lg:grid grid-cols-4 gap-2">
           <li>
