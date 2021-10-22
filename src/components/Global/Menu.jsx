@@ -43,7 +43,7 @@ const Menu = (props) => {
           )}
 
           <li>
-            <Link to="/login" className="uppercase">
+            <Link to="/login" className="uppercase bg-pinkCustom rounded-full p-4 text-white">
               Ingresa
             </Link>
           </li>
