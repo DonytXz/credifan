@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Login, Landing } from "../pages";
+import { Login, Landing, QuoteBudget } from "../pages";
 
 function App() {
   return (
@@ -14,6 +14,9 @@ function App() {
           </Route>
           <Route exact path="/login">
             <Login />
+          </Route>
+          <Route exact path="/quote">
+            <QuoteBudget />
           </Route>
         </Switch>
       </>

@@ -8,8 +8,10 @@ module.exports = {
         blue: {
           light: "#8bd0fc",
           regular: "#243964",
+          dark: "#03053D"
         },
         pinkCustom: "#b6629e",
+        orangeCustom: "#EE7F00"
       },
       // backgroundImage: {
       //   "about": "url('/src/assets/img/bgAbout.png')",

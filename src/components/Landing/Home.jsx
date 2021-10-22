@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Hero from "../../assets/img/figure1.png";
 import Logo from "../../assets/img/logoOnly.png";
 import Header from "../Global/Header";
@@ -26,9 +27,9 @@ const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
             nobis recusandae perspiciatis dolorem fugiat cum commodi!
           </p>
-          <button className="w-3/4 mx-auto uppercase p-6 bg-blue-light text-white">
+          <Link to="/quote" className="w-3/4 mx-auto uppercase p-6 bg-blue-light text-white text-center">
             cotiza ahora!
-          </button>
+          </Link>
         </div>
       </div>
     </>
