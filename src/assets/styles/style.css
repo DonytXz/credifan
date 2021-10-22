@@ -1,8 +1,13 @@
 @font-face {
-    font-family: "IBM";
-    src: url(../fonts//IBM\ Plex\ Sans/IBMPlexSans-Regular.ttf);
-  }
-  
-  *{
-      font-family: "IBM";
-  }
+  font-family: "IBM";
+  src: url(../fonts//IBM\ Plex\ Sans/IBMPlexSans-Regular.ttf);
+}
+
+* {
+  font-family: "IBM";
+}
+.bg__about_img {
+  background-image: url(../img//bgAbout.png);
+  background-repeat:no-repeat;
+  background-position: center center;
+}

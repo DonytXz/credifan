@@ -1,17 +1,17 @@
 import React from "react";
 import Hero from "../../assets/img/figure1.png";
 import Logo from "../../assets/img/logoOnly.png";
-import Header from "./Header";
+import Header from "../Global/Header";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col lg:flex-row w-10/12 mx-auto">
-        <div>
-          <img className="mx-auto" src={Hero} alt="" srcSet="" />
+      <div className="flex flex-col lg:flex-row w-10/12 mx-auto h-full">
+        <div className="h-1/2 my-auto">
+          <img className="mx-auto h-1/2 my-auto" src={Hero} alt="" srcSet="" />
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center my-auto">
           <div className="flex flex-row mx-auto mb-6">
             <h1 className="text-center text-4xl font-bold text-blue-regular mr-6">
               hola casa!

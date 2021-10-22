@@ -11,6 +11,9 @@ module.exports = {
         },
         pinkCustom: "#b6629e",
       },
+      // backgroundImage: {
+      //   "about": "url('/src/assets/img/bgAbout.png')",
+      // },
     },
   },
   variants: {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MobileMenu, Menu } from "../Global";
+import { MobileMenu, Menu } from ".";
 import BrandLogo from "../../assets/img/logoBrand.png";
 
 const Header = () => {
