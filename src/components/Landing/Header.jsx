@@ -6,9 +6,9 @@ const Header = () => {
   const [menuFlag, setMenuFlag] = useState(false);
   return (
     <>
-      <div className="flex flex-row justify-between">
+      <div className="w-10/12 mx-auto flex flex-row justify-between">
         <div className="p-2">
-          <img src={BrandLogo} alt="" srcSet="" />
+          <img className="w-1/2" src={BrandLogo} alt="" srcSet="" />
         </div>
         <Menu menuFlag={menuFlag} setMenuFlag={setMenuFlag} isLanding={true} />
       </div>

@@ -15,7 +15,7 @@ const Menu = (props) => {
         onClick={() => setMenuFlag(!menuFlag)}
       />
       <nav className="hidden lg:block">
-        <ul className="lg:grid grid-cols-4 gap-2">
+        <ul className="lg:grid grid-cols-4 gap-2 h-full place-content-center justify-items-center">
           <li>
             <Link to="/" className="uppercase">
               Home
